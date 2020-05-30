@@ -11,9 +11,25 @@
   </head>
   <body>
     <div class="main-container">
-      <header>
-        <h1>Welcome to your project</h1>
+      <header class="landing-header">
+        <div class="header-content">
+          <div class="landing-header-bg"></div>
+          <div class="landing-header-bg-blend"></div>
+          <h1><a href="index.html">Explore</a></h1>
+        </div>
       </header>
+      <div class="breadcrumbs">
+        <a href="index.html"><em>Welcome |</em></a>
+        <a href="Instructions.html"><em>Instructions |</em></a>
+        <a href="rubric.html"><em>Success Criteria |</em></a>
+        <a href="resources.html"><em>Resources |</em></a>
+        <a href="#"><b>Explore</b></a>
+      </div>
+      <section>
+        <div class="page-buttons">
+          <button class="button" id="prev-btn" type="button" onclick="location.href='resources.html';" name="previous-page">Prev Page</button>
+        </div>
+      </section>
       <nav>
         <div class="nav-menu" id="open-menu">
           <div class="menu-btn-container">
@@ -28,17 +44,23 @@
             <ul class="menu-items">
               <li><a href="index.html">Home</a></li>
               <li><a href="instructions.html">Instructions</a></li>
-              <li><a href="explore.html">Explore</a></li>
-              <li><a href="resources.html">Resources</a></li>
               <li><a href="rubric.html">Success Criteria</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="explore.html">Explore</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <footer>
-        <p>&copy; Copyright All rights reserved. Oleg Zadoyanchuk | s318871</p>
-        <p>ECM241</p>
-        <p>Assignment 2</p>
+        <div class="footer-container">
+          <p>Oleg Zadoyanchuk | s318871</p>
+          <p>ECM241
+            <br>
+            <br>
+            Banner image sourced from <a href="https://www.pxfuel.com" target="_blank" rel="noopener noreferrer">Pxfuel</a>
+          </p>
+          <p>Assignment 2</p>
+        </div>
       </footer>
     </div>
     <script src="scripts/main.js"></script>

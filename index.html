@@ -11,9 +11,40 @@
   </head>
   <body>
     <div class="main-container">
-      <header>
-        <h1>Welcome to your project</h1>
+      <header class="landing-header">
+        <div class="header-content">
+          <div class="landing-header-bg"></div>
+          <div class="landing-header-bg-blend"></div>
+          <h1><a href="index.html">Welcome to Your Project</a></h1>
+        </div>
       </header>
+      <div class="breadcrumbs">
+        <a href="#"><b>Welcome |</b></a>
+        <a href="Instructions.html"><em>Instructions |</em></a>
+        <a href="rubric.html"><em>Success Criteria |</em></a>
+        <a href="resources.html"><em>Resources |</em></a>
+        <a href="explore.html"><em>Explore</em></a>
+      </div>
+      <section>
+        <div class="body-text">
+          <h2 id="subject-title">Design and Technology | Term Project</h2>
+          <h2 id="project-title">Planned Obsolescence - Introduction</h2>
+          <h3>So what is planned obsoloescence?</h3>
+          <p>Have you ever wondered why light bulbs don't last forever? Or why your phone battery doesn't stay charged for a full day anymore? Or even why
+          some devices last longer than others even when they're technically supposed to be identical? Why is it that there are pocket watches over 100 years
+          old that are still happily ticking away while the latest smart watch or some other wearable device from a few years ago is just about obsolete?
+          In actual fact, the word 'obsoloescence' is derived from the word 'obsolete'...I'll let you figure out the 'planned' bit. Are you starting to see
+          the picture?</p>
+          <p>Planned obsoloescence is exactly what it sounds like. Manufacturers engineer devices to fail at a specific time on purpose. This is not even a
+          secret. Some argue that planned obsoloescence is actually good for the economy. Ok, I'll give them that, because more manufacturing means more jobs etc.
+          But, is it good for the environment? This is one of the things you're going to find out through this porject. In the mean time check out
+          <a href="https://www.youtube.com/watch?v=mUt9tGgVxzU&t=2s" target="_blank" rel="noopener noreferrer">this</a> YouTube video from the crew at
+          <a href="https://www.youtube.com/user/TheGoodStuff" target="_blank" rel="noopener noreferrer">The Good Stuff</a> for a deeper look into the subject.</p>
+        </div>
+        <div class="page-buttons">
+          <button class="button" id="next-btn" type="button" onclick="location.href='instructions.html';" name="next-page">Next Page</button>
+        </div>
+      </section>
       <nav>
         <div class="nav-menu" id="open-menu">
           <div class="menu-btn-container">
@@ -28,17 +59,23 @@
             <ul class="menu-items">
               <li><a href="index.html">Home</a></li>
               <li><a href="instructions.html">Instructions</a></li>
-              <li><a href="explore.html">Explore</a></li>
-              <li><a href="resources.html">Resources</a></li>
               <li><a href="rubric.html">Success Criteria</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="explore.html">Explore</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <footer>
-        <p>&copy; Copyright All rights reserved. Oleg Zadoyanchuk | s318871</p>
-        <p>ECM241</p>
-        <p>Assignment 2</p>
+        <div class="footer-container">
+          <p>Oleg Zadoyanchuk | s318871</p>
+          <p>ECM241
+            <br>
+            <br>
+            Banner image sourced from <a href="https://www.pxfuel.com" target="_blank" rel="noopener noreferrer">Pxfuel</a>
+          </p>
+          <p>Assignment 2</p>
+        </div>
       </footer>
     </div>
     <script src="scripts/main.js"></script>
