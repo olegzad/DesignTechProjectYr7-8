@@ -1,0 +1,193 @@
+/*------------------------------------------------------------Nav Menu-------------------------------------------------------------------------*/
+
+/* menu button */
+.menu-btn-container {
+  width: calc(3rem + (96 - 48) * ((100vw - 300px) / (2560 - 300)));
+  height: calc(3rem + (96 - 48) * ((100vw - 300px) / (2560 - 300)));
+  position: relative;
+  border: none;
+  border-radius: 25%;
+  box-shadow: 0.125rem 0.125rem 0.5rem #333;
+  opacity: 0.85;
+}
+
+#show-menu {
+  outline: none;
+  border: none;
+  border-radius: 25%;
+  background: #EFBD47;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#show-menu:hover {
+  background: #87160f;
+}
+
+#show-menu:focus {
+  border: thin solid #c7ffde;
+}
+
+#show-menu:active em {
+  background: white;
+}
+
+/* menu button burger icon transform animation. This code is an adaptation of the orginal by Jesse Couch sourced from at https://codepen.io/designcouch */
+#show-menu em {
+  position: absolute;
+  left: 20%;
+  height: 10%;
+  width: 60%;
+  background: white;
+  border-radius: 0.5rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#show-menu em:nth-child(1) {
+  top: 25%;
+}
+
+#show-menu em:nth-child(2), #show-menu em:nth-child(3) {
+  top: 45%;
+}
+
+#show-menu em:nth-child(4) {
+  top: 65%;
+}
+
+#show-menu.open em:nth-child(1) {
+  top: 45%;
+  width: 0%;
+  left: 50%;
+}
+
+#show-menu.open em:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#show-menu.open em:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#show-menu.open em:nth-child(4) {
+  top: 45%;
+  width: 0%;
+  left: 50%;
+}
+
+#show-menu.open {
+  background: #87160f;
+  /* transition: all 0.2s ease-in-out; */
+}
+
+#show-menu.open:hover {
+  background: #a31f15;
+}
+
+.nav-menu {
+  position: fixed;
+  left: 2%;
+  top: 3%;
+  width: 20rem;
+}
+
+@media (max-width:425px) {
+  .nav-menu {
+    width: 75vw;
+  }
+}
+
+.menu-container {
+  display: none;
+  max-height: auto;
+  margin-top: 0.2rem;
+  background-color: rgba(107, 107, 117, 0.9);
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0.125rem 0.125rem 0.5rem #333;
+}
+
+/* media query to account for landscape mode */
+@media (max-height:599px) {
+  .menu-container {
+    max-height: 250px;
+    overflow-y: auto;
+    background:
+    /* The following scroll shadow code is a modification of the orginal by Roman Komarov http://kizu.ru/en/fun/shadowscroll/ and Lea Verou http://lea.verou.me/2012/04/background-attachment-local/
+		/* Shadow covers */
+		linear-gradient(rgba(107,107,117, 0.9) 30%, rgba(107,107,117,0)),
+		linear-gradient(rgba(107,107,117,0), rgba(107,107,117,0.9) 70%) 0 100%,
+		/* Shadows */
+		radial-gradient(50% 0, farthest-side, rgba(0,0,0,.5), rgba(0,0,0,0)),
+		radial-gradient(50% 100%,farthest-side, rgba(0,0,0,.5), rgba(0,0,0,0)) 0 100%;
+
+    background:
+		/* Shadow covers */
+		linear-gradient(rgba(107,107,117,0.9) 30%, rgba(107,107,117,0)),
+		linear-gradient(rgba(107,107,117,0), rgba(107,107,117,0.9) 70%) 0 100%,
+
+		/* Shadows */
+		radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.5), rgba(0,0,0,0)),
+		radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.5), rgba(0,0,0,0)) 0 100%;
+	  background-repeat: no-repeat;
+    background-color: rgb(107,107,117); /* Fallback color for MS edge and other incompatible browsers*/
+	  background-color: rgba(107,107,117,0.9);
+	  background-size: 100% 2.5rem, 100% 2.5rem, 100% 1rem, 100% 1rem;
+	  background-attachment: local, local, scroll, scroll;
+  }
+}
+
+.nav-menu ul {
+  list-style: none;
+  font-size: calc(1.625rem + (52 - 26) * ((100vw - 300px) / (2560 - 300)));
+}
+
+.nav-menu ul li {
+  transition: 0.4s;
+}
+
+.nav-menu ul li:hover {
+  color: rgba(107, 107, 117, 1);
+  background-color: white;
+  text-indent: 0.5rem;
+}
+
+.nav-menu ul li a {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-bottom: thin solid rgba(255, 255, 255, 0.1)
+}
+
+.nav-menu ul li a:hover {
+  color: rgba(107, 107, 117, 1);
+}
