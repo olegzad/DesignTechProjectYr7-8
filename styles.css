@@ -15,6 +15,19 @@ body {
   background-color: #f2f2f2;
 }
 
+/* Custom scrollbars for Chrome */
+::-webkit-scrollbar{
+	width:0.625rem;
+	background-color:#D9D2C8;
+	border-radius:0.625rem;
+}
+
+::-webkit-scrollbar-thumb{
+	border-radius:0.625rem;
+	background-color:#2170de;
+	box-shadow:0 0 0.4rem #433D3D;
+}
+
 a {
   text-decoration: none;
   color: #2170de;
@@ -32,13 +45,16 @@ a {
   }
 }
 
+/* ALL HEADERS */
+
 header {
   width: 100%;
+  height: auto;
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
-/* ALL HEADERS */
 .header-content {
   text-align: center;
   padding-left: 2rem;
@@ -64,7 +80,7 @@ header {
 }
 
 .landing-header-bg {
-  background: url('media/images/image-1.jpg');
+  background: url('media/images/image-5.jpg');
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -88,6 +104,10 @@ header {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.page-buttons {
+  text-align: center;
 }
 
 /*----------------------------------------------------------------------------All CARDS----------------------------------------------------------------------*/
@@ -242,12 +262,16 @@ header {
   border: thin solid #c7ffde;
 }
 
+.breadcrumbs {
+  margin-bottom: 0.5rem;
+}
+
 /*--------------------------------------------------------------footer-----------------------------------------------------------------------------*/
 
 footer {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: #333;
   color: white;
 }
@@ -269,7 +293,7 @@ footer {
   position: relative;
   border: none;
   box-shadow: 0.125rem 0.125rem 0.5rem #333;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 #show-menu {
@@ -456,4 +480,74 @@ footer {
 
 .nav-menu ul li a:hover {
   color: rgba(107, 107, 117, 1);
+}
+
+/*------------------------------------------------------------------- HOME PAGE ------------------------------------------------------------------------*/
+
+.body-text {
+  padding: 3rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width:510px) {
+  .body-text {
+    padding:1.5rem;
+  }
+}
+
+.body-text h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.body-text h3 {
+  margin-bottom: 0.5rem;
+}
+
+.body-text p {
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.video-container iframe {
+  width: 41%;
+  height: 348px;
+}
+
+@media (max-width:1024px) {
+  .video-container iframe {
+    width: 50%;
+    height: 325px;
+  }
+}
+
+@media (max-width:768px) {
+  .video-container iframe {
+    width: 60%;
+    height: 300px;
+  }
+}
+
+@media (max-width:550px) {
+  .video-container iframe {
+    width: 75%;
+    height: 250px
+  }
+}
+
+@media (max-width:425px) {
+  .video-container iframe {
+    width: 90%;
+    height: 200px;
+  }
+}
+
+/*------------------------------------------------------------------- RUBRIC PAGE ------------------------------------------------------------------------*/
+
+.document-container {
+  text-align: center;
 }
