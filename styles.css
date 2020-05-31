@@ -181,16 +181,23 @@ header {
   object-fit: cover;
 }
 
-.card-text{
-  font-size: calc(1rem + (32 - 16) * ((100vw - 300px) / (2560 - 300)));
-  font-family: Perpetua, serif;
-  font-weight: bold;
-  color: #333;
+.card-text {
+  font-size: 1.5rem;
   text-align: left;
   padding-top: 0.8rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   padding-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+.card-text h3 {
+  color: #962626;
 }
 
 .card-text em {
@@ -206,15 +213,15 @@ header {
   text-decoration-color: rgba(107, 107, 117, 0);
   -webkit-text-decoration-color: rgba(107, 107, 117, 0);
   -moz-text-decoration-color: rgba(107, 107, 117, 0);
-  color: #b31e14;
+  color: #2170de;
   transition: all 0.3s ease-in-out;
 }
 
 .card-text a:hover {
-  text-decoration-color: rgba(107, 107, 117, 1);
-  -webkit-text-decoration-color: rgba(107, 107, 117, 1);
-  -moz-text-decoration-color: rgba(107, 107, 117, 1);
-  color: #6b6b75;
+  text-decoration-color: rgba(179, 30, 20, 1);
+  -webkit-text-decoration-color: rgba(179, 30, 20, 1);
+  -moz-text-decoration-color: rgba(179, 30, 20, 1);
+  color: #b31e14;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -604,6 +611,10 @@ footer {
 
 #overview-text {
   color:white;
+}
+
+#note {
+  font-size: 1.2rem;
 }
 
 /* DESIGN */
