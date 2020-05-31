@@ -418,7 +418,7 @@ footer {
   position: fixed;
   left: 8%;
   top: 3%;
-  width: 22rem;
+  width: 23rem;
 }
 
 @media (max-width:768px) {
