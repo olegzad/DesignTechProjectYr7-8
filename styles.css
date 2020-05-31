@@ -12,7 +12,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #ebebeb;
+
+  /* background-color: #ebebeb; */
 }
 
 /* Custom scrollbars for Chrome */
@@ -605,7 +606,7 @@ footer {
 #overview-info {
   margin: 0;
   box-shadow: none;
-  background-color: rgba(92, 92, 92, 0.5);
+  background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
   height: auto;
 }
@@ -623,6 +624,15 @@ footer {
 
 #note {
   font-size: 1.2rem;
+}
+
+#overview-quote {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(107, 107, 117, 0.8);
 }
 
 /* DESIGN */
@@ -644,7 +654,7 @@ footer {
 #design-info {
   margin: 0;
   box-shadow: none;
-  background-color: rgba(92, 92, 92, 0.5);
+  background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
   height: auto;
 }
@@ -658,6 +668,15 @@ footer {
 
 #design-text {
   color:white;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 2.8rem;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  color: rgba(107, 107, 117, 0.8);
 }
 
 /* TIMELINE */
@@ -678,7 +697,7 @@ footer {
 #timeline-info {
   margin: 0;
   box-shadow: none;
-  background-color: rgba(92, 92, 92, 0.5);
+  background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
   height: auto;
 }
@@ -712,7 +731,7 @@ footer {
 #presentation-info {
   margin: 0;
   box-shadow: none;
-  background-color: rgba(92, 92, 92, 0.5);
+  background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
   height: auto;
 }
