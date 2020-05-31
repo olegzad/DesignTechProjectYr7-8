@@ -1,4 +1,22 @@
 // dropdown manu
+// make menu buttom disapear after scroll
+var showMenu = $("#open-menu");
+var scrollTrigger = 120;
+
+$(document).ready(function (){
+  $("#open-menu").show();
+})
+
+$(document).scroll(function (){
+  if ($(this).scrollTop() < scrollTrigger) {
+    showMenu.fadeIn();
+  }
+  else {
+    showMenu.fadeOut();
+  }
+});
+
+
 // hamburger icon toggle
 $("#show-menu").click(function (event){
   event.stopPropagation();
