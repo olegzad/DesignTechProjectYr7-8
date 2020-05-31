@@ -737,3 +737,51 @@ blockquote {
 #presentation-text {
   color:white;
 }
+
+/*------------------------------------------------------------------- GALLERY PAGE ------------------------------------------------------------------------*/
+
+.gallery-row {
+  width
+  margin-bottom: 6rem;
+  padding: 0;
+  border: thin solid rgba(92, 92, 92, 0.5);
+}
+
+/* DESIGN BRIEFS */
+#design-brief-upload-card {
+  position: relative;
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #design-brief-upload-card {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+#design-brief-upload-info {
+  margin: 0;
+  box-shadow: none;
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #design-brief-upload-info {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+#design-brief-upload-text {
+  color:white;
+}
+
+#design-brief-upload-card-img {
+  display: flex;
+}

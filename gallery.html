@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="main-container">
-      <header class="landing-header" id="resources-header">
+      <header class="landing-header" id="gallery-header">
         <div class="header-content">
           <div class="landing-header-bg"></div>
           <div class="landing-header-bg-blend"></div>
@@ -19,7 +19,26 @@
           <h2 id="subject-title">Design and Technology | Product Longevity</h2>
         </div>
       </header>
-      <section>
+      <section class="cards-container" id="gallery-container">
+        <div class="card-row gallery-row">
+          <div class="card" id="design-brief-upload-card">
+            <div class="card-text" id="design-brief-upload-title">
+              <h2>Design Briefs</h2>
+            </div>
+            <div class="card-media" id="design-brief-upload-card-img">
+              <img id="design-brief-upload-img" src="media/images/image-10.jpg" alt="picture of many different devices">
+            </div>
+          </div>
+          <div class="card" id="design-brief-upload-info">
+            <div class="card-text" id="design-brief-upload-text">
+              <h2>Upload your Design Brief here</h2>
+              <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="design-brief-upload" value="design-brief-upload">
+                <button type="submit" name="submit">Upload File</button>
+              </form>
+            </div>
+          </div>
+        </div>
         <div class="page-buttons">
           <button class="button" id="prev-btn" type="button" onclick="location.href='rubric.html';" name="previous-page">Prev Page</button>
           <div class="breadcrumbs">
@@ -45,7 +64,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="instructions.html">Instructions</a></li>
               <li><a href="rubric.html">Success Criteria</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
             </ul>
           </div>
         </div>
