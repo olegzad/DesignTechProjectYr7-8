@@ -13,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  line-height: 2rem;
 }
 
 /* Custom scrollbars for Chrome */
@@ -51,7 +50,10 @@ a {
 header {
   width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto
   text-align: center;
   padding-bottom: 2rem;
 }
@@ -66,7 +68,7 @@ header {
 .header-content h1 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 .header-content h1 a {
@@ -115,12 +117,22 @@ header {
 
 .cards-container {
   display: block;
-  width: 90vw;
+  width: 80vw;
   margin: auto;
   padding: 1rem;
 }
 
+@media (max-width:768px) {
+  .cards-container {
+    width: 95vw;
+  }
+}
+
 .card-row {
+  width: 100%;
+  margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: row;
 }
@@ -141,7 +153,6 @@ header {
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: thin solid black;
 }
 
 @media (max-width:940px){
@@ -483,12 +494,14 @@ footer {
 
 .body-text {
   padding: 3rem;
+  padding-top: 1rem;
   font-size: 1.5rem;
 }
 
 @media (max-width:510px) {
   .body-text {
-    padding:1.5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -547,4 +560,149 @@ footer {
 
 .document-container {
   text-align: center;
+}
+
+/*------------------------------------------------------------------- INSTRUCTIONS PAGE ------------------------------------------------------------------------*/
+
+.instructions-row {
+  width
+  margin-bottom: 6rem;
+  padding: 0;
+  border: thin solid rgba(92, 92, 92, 0.5);
+}
+
+/* OVERVIEW */
+#overview-card {
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #overview-card {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+#overview-info {
+  margin: 0;
+  box-shadow: none;
+  background-color: rgba(92, 92, 92, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #overview-info {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+#overview-text {
+  color:white;
+}
+
+/* DESIGN */
+#design-card {
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #design-card {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+#design-info {
+  margin: 0;
+  box-shadow: none;
+  background-color: rgba(92, 92, 92, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #design-info {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+#design-text {
+  color:white;
+}
+
+/* TIMELINE */
+#timeline-card {
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #timeline-card {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+#timeline-info {
+  margin: 0;
+  box-shadow: none;
+  background-color: rgba(92, 92, 92, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #timeline-info {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+#timeline-text {
+  color:white;
+}
+
+/* PRESENTATION */
+#presentation-card {
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #presentation-card {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+#presentation-info {
+  margin: 0;
+  box-shadow: none;
+  background-color: rgba(92, 92, 92, 0.5);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width:940px) {
+  #presentation-info {
+    margin-left: auto;
+    margin-top: 0;
+  }
+}
+
+#presentation-text {
+  color:white;
 }
