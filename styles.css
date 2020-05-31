@@ -516,6 +516,7 @@ footer {
 
 .body-text p {
   margin-bottom: 1rem;
+  line-height: 2rem;
 }
 
 .video-container {
