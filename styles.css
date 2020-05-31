@@ -12,7 +12,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: #ebebeb;
 }
 
 /* Custom scrollbars for Chrome */
@@ -128,6 +128,13 @@ header {
   }
 }
 
+@media (max-width:500px) {
+  .cards-container {
+    width: 100vw;
+    padding: 0;
+  }
+}
+
 .card-row {
   width: 100%;
   margin-bottom: 6rem;
@@ -144,7 +151,7 @@ header {
 }
 
 .card {
-  background-color: #f2f2f2;
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 46%;
@@ -192,12 +199,19 @@ header {
 
 @media (max-width:768px) {
   .card-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
 .card-text h3 {
   color: #962626;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.card-text p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .card-text em {
@@ -209,19 +223,12 @@ header {
 }
 
 .card-text a {
-  text-decoration: underline;
-  text-decoration-color: rgba(107, 107, 117, 0);
-  -webkit-text-decoration-color: rgba(107, 107, 117, 0);
-  -moz-text-decoration-color: rgba(107, 107, 117, 0);
   color: #2170de;
   transition: all 0.3s ease-in-out;
 }
 
 .card-text a:hover {
-  text-decoration-color: rgba(179, 30, 20, 1);
-  -webkit-text-decoration-color: rgba(179, 30, 20, 1);
-  -moz-text-decoration-color: rgba(179, 30, 20, 1);
-  color: #b31e14;
+  color: #efbd47;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -592,6 +599,10 @@ footer {
     margin-right: auto;
     margin-bottom: 0;
   }
+}
+
+#overview-card-lower-img {
+  display: flex;
 }
 
 #overview-info {
