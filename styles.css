@@ -187,7 +187,7 @@ header {
   padding-top: 0.8rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (max-width:768px) {
