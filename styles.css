@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  line-height: 2rem;
 }
 
 /* Custom scrollbars for Chrome */
@@ -514,8 +515,8 @@ footer {
 }
 
 .video-container iframe {
-  width: 41%;
-  height: 348px;
+  width: 39%;
+  height: 332px;
 }
 
 @media (max-width:1024px) {
